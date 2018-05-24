@@ -14,14 +14,6 @@
     height: 100%;
     width: 100%;
     z-index:-999;
-
-    filter: blur(8px);
-    -webkit-webkit-filter: blur(8px);
-    -moz-webkit-filter: blur(8px);
-    -ms-webkit-filter: blur(8px);
-    -o-webkit-filter: blur(8px);
-    -khtml-webkit-filter: blur(8px);
-    webkit-filter: blur(8px);
 }
 
 
