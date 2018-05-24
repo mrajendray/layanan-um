@@ -1,0 +1,68 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro|Droid+Sans);
+body {
+  margin-top: 50px;
+  background: transparent url(/img/assessment/bg1.jpg) fixed top center no-repeat;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-size: 100% 100%;
+}
+
+.text-center h3 {
+  color: white;
+}
+
+.form-signin {
+  max-width: 360px;
+  padding: 15px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+  background: none repeat scroll 0 0 #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px; margin: 0;
+  font-size: 16px;
+
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="username"] {
+  margin-bottom:2px;
+  /*background-color: #2d2d2d;
+  opacity: .4;*/
+  background-color: #fff;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  /*background-color: #2d2d2d;
+  opacity: .4;*/
+  background-color: #fff;
+}
+
+.btn {
+  /*margin-top: 60px;*/
+}
+.lupapassword a:hover{
+  text-decoration: none;
+  color: red;
+}
+
+.form-control, .form-control::-moz-placeholder {
+    /*color: #fff !important;*/
+    font-weight: bold;
+    opacity: 1;
+    letter-spacing: -1;
+}
