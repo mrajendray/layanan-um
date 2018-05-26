@@ -1,6 +1,9 @@
 <?php
 namespace App;
-require_once 'index.php';
+require_once 'config.php';
+require_once 'library/Kiss/Utils.php';
+require_once 'Utils.php';
+require_once 'database.php';
 
 class Auth {
     const table = "usercredentials";

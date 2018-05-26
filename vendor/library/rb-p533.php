@@ -10803,7 +10803,7 @@ class Facade
 	 */
 	public static function transaction( $callback )
 	{
-		return Transaction::transaction( self::$adapter, $callback );
+		return Transaction::transactioni( self::$adapter, $callback );
 	}
 
 	/**
@@ -12687,7 +12687,7 @@ class Facade
 	 */
 	public static function dump( $data )
 	{
-		return Dump::dump( $data );
+		return Dump::dumpi( $data );
 	}
 
 	/**
@@ -14080,7 +14080,7 @@ class Dump
 	 *
 	 * @return array
 	 */
-	public static function dump( $data )
+	public static function dumpi( $data )
 	{
 		$array = array();
 		if ( $data instanceof OODBBean ) {
@@ -14094,7 +14094,7 @@ class Dump
 		}
 		if ( is_array( $data ) ) {
 			foreach( $data as $key => $item ) {
-				$array[$key] = self::dump( $item );
+				$array[$key] = self::dumpi( $item );
 			}
 		}
 		return $array;
@@ -14227,7 +14227,7 @@ class Transaction
 	 *
 	 * @return mixed
 	 */
-	public static function transaction( Adapter $adapter, $callback )
+	public static function transactioni( Adapter $adapter, $callback )
 	{
 		if ( !is_callable( $callback ) ) {
 			throw new RedException( 'R::transaction needs a valid callback.' );
