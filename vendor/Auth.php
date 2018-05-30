@@ -21,7 +21,7 @@ class Auth {
             // check user password
             if ($user->password == $password) {
                 // generate new token and set to user object
-                $user->remember_token = $user->username.'.'.substr(md5(uniqid('')), 0, 16);
+                $user->remember_token = $user->username.'.'.substr(md5(uniqid('')), 0, 32);
                 // set timestamp for user object
                 $user->updated_at = date("Y-m-d H:i:s");
                 // save updated user object into database

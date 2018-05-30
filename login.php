@@ -100,12 +100,12 @@ if (!Utils::check_request($_REQUEST, array('username', 'password'), 'POST')) {
     $(document).ready(function() {
         regisLogin($('#lgnForm'), $('#username'), $('#password'));
         <?php
-            if (isset($_REQUEST['logout']))
-                echo "logout()";
-            else if ($wrongCred)
-                echo "loginFail()";
-            else
-                echo "tryLogin($('#lgnForm'), $('#username'), $('#password'));";
+        if (isset($_REQUEST['logout']))
+            echo "logout()";
+        else if ($wrongCred)
+            echo "loginFail()";
+        else
+            echo "tryLogin($('#lgnForm'), $('#username'), $('#password'));";
         ?>
     });
 </script>

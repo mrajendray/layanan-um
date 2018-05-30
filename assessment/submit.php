@@ -2,7 +2,7 @@
 require_once '../vendor/index.php';
 
 // check user login status
-if (!($user = \App\Auth::isLogged())) {
+if (!($user = \App\Auth::isLogged()) || $user->role != 'institute') {
     // return auth error
     $ret = array(
         "error"=>true,

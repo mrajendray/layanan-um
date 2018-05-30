@@ -55,9 +55,10 @@ function greeting() {
         .get('/assessment/greeting.php')
         .then(function(res) {
             res = res.data;
-            if (!res.error)
-                $('#greeting').text(res.greeting);
-            else
+            if (!res.error) {
+                $('#greeting-id').text(res.greetingID);
+                $('#greeting-en').text(res.greetingEN);
+            } else
                 window.location = '/login.php';
         });
 }
