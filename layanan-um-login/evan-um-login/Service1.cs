@@ -10,6 +10,7 @@ namespace evan_um_login
         private static string username;
         private static string password;
         private static WebServer ws;
+        private static IniFile MyIni;
 
         public Service1()
         {
@@ -19,12 +20,9 @@ namespace evan_um_login
         protected override void OnStart(string[] args)
         {
             // prepare login file
-            var MyIni = new IniFile(@"C:\UM\Evan\config.ini");
+            MyIni = new IniFile(@"C:\UM\Evan\config.ini");
 
             port = MyIni.Read("port", "app");
-            username = MyIni.Read("username", "login");
-            password = MyIni.Read("password", "login");
-
             string host = "http://localhost:" + port + "/um/evan/login/";
             ws = new WebServer(SendResponse, host);
             ws.Run();
@@ -33,6 +31,8 @@ namespace evan_um_login
         }
         public static string SendResponse(HttpListenerRequest request)
         {
+            username = MyIni.Read("username", "login");
+            password = MyIni.Read("password", "login");
             return "{\"username\":\"" + username + "\", \"password\":\"" + password + "\"}";
         }
 
