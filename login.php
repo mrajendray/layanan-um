@@ -95,19 +95,23 @@ if (!Utils::check_request($_REQUEST, array('username', 'password'), 'POST')) {
 </div>
 
 <script type="text/javascript" src="/resource/js/vendor/jquery.min.js"></script>
+<script type="text/javascript" src="/resource/js/vendor/axios.min.js"></script>
 <script type="text/javascript" src="/resource/js/autologin.js"></script>
 <script>
-    $(document).ready(function() {
+    var form = $('#lgnForm');
+    var username = $('#username');
+    var password = $('#password');
+    /**$(document).ready(function() {
         regisLogin($('#lgnForm'), $('#username'), $('#password'));
         <?php
-        if (isset($_REQUEST['logout']))
-            echo "logout()";
-        else if ($wrongCred)
-            echo "loginFail()";
-        else
-            echo "tryLogin($('#lgnForm'), $('#username'), $('#password'));";
+        //if (isset($_REQUEST['logout']))
+        //    echo "logout()";
+        //else if ($wrongCred)
+        //    echo "loginFail()";
+        //else
+        //    echo "tryLogin($('#lgnForm'), $('#username'), $('#password'));";
         ?>
-    });
+    });*/
 </script>
 </body>
 </html>

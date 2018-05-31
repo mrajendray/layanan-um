@@ -1,0 +1,6 @@
+D:\MyProject\praktik_industri\layanan-um-login\layanan-um-login\bin\Release\layanan-um-login.exe.config
+D:\MyProject\praktik_industri\layanan-um-login\layanan-um-login\bin\Release\layanan-um-login.exe
+D:\MyProject\praktik_industri\layanan-um-login\layanan-um-login\bin\Release\layanan-um-login.pdb
+D:\MyProject\praktik_industri\layanan-um-login\layanan-um-login\obj\Release\layanan-um-login.exe
+D:\MyProject\praktik_industri\layanan-um-login\layanan-um-login\obj\Release\layanan-um-login.pdb
+D:\MyProject\praktik_industri\layanan-um-login\layanan-um-login\obj\Release\layanan-um-login.csprojResolveAssemblyReference.cache

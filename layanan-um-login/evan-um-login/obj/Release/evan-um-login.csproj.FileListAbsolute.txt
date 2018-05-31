@@ -1,0 +1,8 @@
+D:\MyProject\praktik_industri\layanan-um-login\evan-um-login\bin\Release\evan-um-login.exe.config
+D:\MyProject\praktik_industri\layanan-um-login\evan-um-login\bin\Release\evan-um-login.exe
+D:\MyProject\praktik_industri\layanan-um-login\evan-um-login\bin\Release\evan-um-login.pdb
+D:\MyProject\praktik_industri\layanan-um-login\evan-um-login\obj\Release\evan-um-login.csprojResolveAssemblyReference.cache
+D:\MyProject\praktik_industri\layanan-um-login\evan-um-login\obj\Release\evan-um-login.exe
+D:\MyProject\praktik_industri\layanan-um-login\evan-um-login\obj\Release\evan-um-login.pdb
+D:\MyProject\praktik_industri\layanan-um-login\evan-um-login\obj\Release\evan_um_login.ProjectInstaller.resources
+D:\MyProject\praktik_industri\layanan-um-login\evan-um-login\obj\Release\evan-um-login.csproj.GenerateResource.Cache

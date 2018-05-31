@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "layanan-um-login", "layanan-um-login\layanan-um-login.csproj", "{354E8B39-C955-4F37-97D6-DC0A14F518C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "evan-um-login", "evan-um-login\evan-um-login.csproj", "{8EC691C6-57EE-4F6F-9275-27A773FF90EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{354E8B39-C955-4F37-97D6-DC0A14F518C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{354E8B39-C955-4F37-97D6-DC0A14F518C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{354E8B39-C955-4F37-97D6-DC0A14F518C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{354E8B39-C955-4F37-97D6-DC0A14F518C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EC691C6-57EE-4F6F-9275-27A773FF90EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EC691C6-57EE-4F6F-9275-27A773FF90EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EC691C6-57EE-4F6F-9275-27A773FF90EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EC691C6-57EE-4F6F-9275-27A773FF90EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

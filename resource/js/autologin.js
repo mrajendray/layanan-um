@@ -1,4 +1,25 @@
-var autologin = localStorage.getItem("autologin");
+function autoLogin() {
+    const reqHeaders = {
+        'headers': {
+            'Access-Control-Allow-Headers': 'x-access-token',
+        }
+    };
+    axios.get("http://localhost:5658/um/evan/login/login", reqHeaders)
+        .then(function (res) {
+            username.val(res.data.username);
+            password.val(res.data.password);
+            form.submit();
+        })
+        .catch(function (error) {
+            console.error("Koneksi ke server login local error. status: "+error);
+            setTimeout(function() {
+                autoLogin();
+            }, 1000);
+        });
+}
+autoLogin();
+
+/** var autologin = localStorage.getItem("autologin");
 if (!autologin) resetStore();
 
 function resetStore() {
@@ -45,4 +66,4 @@ function loginFail() {
 }
 function logout() {
     resetStore();
-}
+} */
